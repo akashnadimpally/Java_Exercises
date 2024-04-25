@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Skynet</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<div class="signup-container">
+    <h1>Sign Up</h1>
+    <form id="signupForm" class="signup-form">
+        <input type="text" id="firstName" placeholder="First name" required>
+        <input type="text" id="lastName" placeholder="Last name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm_password" placeholder="Password" required>
+        <select id="country" required>
+            <option value="">Country of Residence</option>
+            <!-- Populate with options -->
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="South Korea">South Korea</option>
+        </select>
+        <div class="phone-group">
+            <select id="phoneCode" required>
+                <option value="+91">IN +91</option>
+                <!-- Populate with options -->
+                <option value="+1">US +1</option>
+                <option value="+04">UK +04</option>
+                <option value="+44">EU +44</option>
+                <option value="+63">CH +63</option>
+            </select>
+            <input type="tel" id="phone" placeholder="Phone" required>
+        </div>
+        <label class="privacy-policy">
+            <input type="checkbox" id="privacyPolicy" required>
+            I agree to the privacy policy
+        </label>
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <button type="submit">Sign Up</button>
+        <p>Already a member? <a href="Login.html">Log In</a></p>
+    </form>
+</div>
+<script src="../JS/signup.js"></script>
+<!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+</body>
+</html>
